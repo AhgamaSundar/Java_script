@@ -1,4 +1,4 @@
-function calculateAdultYears( x){
+function calculateAdultYears(x){
     let y=x-18;
     return y;
 
