@@ -1,15 +1,19 @@
-function calculateAdultYears(x){
-    let y=x-18;
-    return y;
-
+function calculateAdultYears(x) {
+  let y = x - 18;
+  return y;
 }
 let age = 40;
 let greet = "My Arch's working good";
-let hobbie=['sport','game','movie'];
-let obj={title:'developer'};
+let hobbie = ["sport", "game", "movie"];
+let object = { title: "developer" };
 
-let legalAge=calculateAdultYears(age);
+let legalAge = calculateAdultYears(age);
+let obj = {
+  name: "Karl",
+  greet() {
+    console.log("hello" + this.name);
+    
+  },
+};
 
-
-
-alert(legalAge);
+obj.greet();
