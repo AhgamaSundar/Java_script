@@ -1,2 +1,4 @@
-console.log(document);
-document.body.children[1].children[0].href='https://www.google.com/';
+let firstEle=document.getElementById("heading");
+firstEle.parentElement.color="green";
+let seconParagarph=document.querySelector('.second');
+seconParagarph.innerText="changed";
