@@ -1,19 +1,14 @@
-let paragraph=document.querySelector('p');
-let count=0 ;
-let text=document.querySelector('input');
-function changeParagraphText(event){
-    
-    paragraph.innerHTML="clicked";
-  
+let inp=document.getElementById("Product")
+let para =document.querySelector("p");
 
-}
-function counst(event){
+function update(event){
+    let number=event.target.value;
+    let len=number.length;
+   
+    para.innerHTML=inp.maxLength-len+"/60"
+     
     
-
+     
     
-        count++;
-    console.log(event.data);
-    console.log(count)
 }
-paragraph.addEventListener('click',changeParagraphText);
-text.addEventListener('input',counst);
+inp.addEventListener('input',update)
