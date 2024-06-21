@@ -20,6 +20,9 @@ input{
 p{
     display: inline;
 }
+.warning{
+    color:red;
+}
 button{
     margin-top:1rem ;
     width :5rem;
