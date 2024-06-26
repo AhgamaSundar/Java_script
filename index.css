@@ -20,8 +20,14 @@ input{
 p{
     display: inline;
 }
-.warning{
-    color:red;
+input.warning{
+ background-color:rgb(210, 78, 78);
+}
+#update.warning{
+   color: rgb(212, 54, 54);
+}
+.turnr{
+    background-color: red;
 }
 button{
     margin-top:1rem ;
