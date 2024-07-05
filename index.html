@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic tac toe</h1>
+      <p>Built using javascript,html and css</p>
+    </header>
+    <main>
+      <aside>
+        <h2>Choose your name</h2>
+        <form>
+          <div>
+            <label for="pname">player name</label>
+            <input type="text" id="pname" name="username" />
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+            <button type="button">Cancel</button>
+          </div>
+        </form>
+      </aside>
+      <section id="game_config"></section>
+      <ol>
+        <li>
+          <article>
+            <h2>Player 1</h2>
+            <h3>PLAYERNAME</h3>
+            <p>X</p>
+            <button>Edit</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2>Player 2</h2>
+            <h3>PLAYERNAME</h3>
+            <p>O</p>
+          </article>
+        </li>
+      </ol>
+      <button>Start New game</button>
+      <section id="active_game">
+        <article>
+            <h3>You won!<span class="activeplayer">Playername</span></h3>
+            <p>CLick above  to Start a new game</p>
+        </article>
+        <p>Its your Turn <span class="activeplayer">PLAYERNAME</span>!</p>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
