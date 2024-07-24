@@ -50,7 +50,7 @@
     background-color: rgb(112,13,204);
 }
 #game-board li.disabled{
-    grid-template-columns: repeat(3 6rem);
+    background-color: rgb(112,13,204);
     cursor:default;
     color: white;
 
