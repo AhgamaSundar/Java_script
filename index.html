@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="styles/config.css"/>
     <link rel="stylesheet" href="styles/game.css" />
     <title>Tic tac toe</title>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/config.js"></script>
-    <script src="scripts/game.js"></script>
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/app.js" defer></script>
   </head>
   <body>
     <div id ="backdrop" ></div>
@@ -34,7 +34,7 @@
           </div>
           <div>
             <button type="submit" class="btn ">Submit</button>
-            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="button" class="btn btn-alt" id="cancel-config-button">Cancel</button>
           </div>
         </form>
       </aside>
