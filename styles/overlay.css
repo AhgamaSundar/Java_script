@@ -18,6 +18,14 @@
     background-color: rgba(0,0,0,0.7);
     display: none;
 }
+.error input {
+  border-color: red;
+  color: red;
+  background-color: rgb(222, 174, 174);
+}
+.error label{
+  color: red;
+}
 
 @media (min-width: 48rem) {
   .modal {
