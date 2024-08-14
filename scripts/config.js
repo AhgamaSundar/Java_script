@@ -26,8 +26,10 @@ function savePlayerConfig(event){
     }
     const updatedPlayerData=document.getElementById('player-'+editedPlayer+'-data');
     updatedPlayerData.children[1].textContent=enteredPlayername;
+    player[editedPlayer - 1].name=enteredPlayername;
     closePlayerConfig();
 }
+
 function clickontext(){
     formElement.firstElementChild.classList.remove("error");
     errorsOutputElement.textContent="";
@@ -35,4 +37,3 @@ function clickontext(){
 
 }
 
-player[editedPlayer -1].name=enteredPlayername;

@@ -1,6 +1,7 @@
 #active_game{
     text-align:center;
     margin:2rem 0 5rem 0;
+    
    
 
 
@@ -51,7 +52,8 @@
 }
 #game-board li.disabled{
     background-color: rgb(112,13,204);
-    cursor:default;
+    cursor:not-allowed;
     color: white;
+    pointer-events: auto;
 
 }
