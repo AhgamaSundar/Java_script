@@ -14,12 +14,13 @@ const player = [
 const startGameButton=document.getElementById("startGameButton");
 startGameButton.addEventListener('click',startGame)
 const gameAreaButton=document.getElementById("active_game");
+const activePlayerName=document.getElementById("active-player-name");
 
 const playerConfigOverlay = document.getElementById("config-overlay");
 const backDropElement = document.getElementById("backdrop");
 const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-error");
-//const gameFieldElement=document.querySelectorAll("#game-board li");
+const gameFieldElement=document.querySelectorAll("#game-board li");
 const gameBoardElement=document.getElementById("game-board");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
