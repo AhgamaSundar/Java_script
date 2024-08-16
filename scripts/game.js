@@ -58,7 +58,7 @@ function selectGamefield(event){
     }
 
     else{
-        alert("Please click on  playable the field");
+        alert("Please click on the playable field");
     }
 
 }
