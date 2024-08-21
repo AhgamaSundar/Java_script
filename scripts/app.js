@@ -3,10 +3,11 @@ const gameData=[
 [0,0,0],
 [0,0,0]
 ];
-
+let winr=0;
 let currentRound = 0;
 let editedPlayer = 0;
 let activePlayer=0;
+let gameIsOver = false;
 const player = [
   {
     name: '',
@@ -29,6 +30,8 @@ const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-error");
 const gameFieldElement=document.querySelectorAll("#game-board li");
 const gameBoardElement=document.getElementById("game-board");
+const gameOverElement=document.getElementById("game_over");
+const winnersName=document.getElementById("winnerName");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
