@@ -35,6 +35,10 @@ function gameOver(){
                 
                 return gameData[1][1];
        }
+    if(currentRound===9){
+        return -1;
+
+    }
        return 0;
 }
 function selectGamefield(event){
@@ -51,6 +55,8 @@ function selectGamefield(event){
     const selecetdRow=selectedField.dataset.row -1;
     gameData[selecetdRow][selecetdColumn]=activePlayer+1;
     console.log(gameData);
+    currentRound++;
+
 
     activePlayer=1-activePlayer;
     activePlayerName.textContent=player[activePlayer].name;
