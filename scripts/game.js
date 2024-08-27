@@ -16,8 +16,9 @@ function startGame(){
     activePlayerName.textContent=player[activePlayer].name;
      gameOverElement.style.display='none';
     gameAreaButton.style.display='block';
-    winr=0
-    console.log(gameData);
+    console.log(winr);
+    winr=0;
+    
     currentRound=0;
 }
 function gameOver() {
@@ -107,7 +108,7 @@ function endgame(winnerId){
     else if(winnerId===2){
         winnersName.textContent=player[1].name;
     }
-    else if(winnerId===-1){
+    else {
         document.querySelector("#game_over h2").textContent="DRAW!"
         winnersName.style.display="none";
 
