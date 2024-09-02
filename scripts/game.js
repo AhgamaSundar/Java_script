@@ -18,7 +18,6 @@ function startGame(){
     gameAreaButton.style.display='block';
     console.log(winr);
     winr=0;
-    
     currentRound=0;
 }
 function gameOver() {
@@ -83,6 +82,7 @@ function selectGamefield(event){
     gameData[selecetdRow][selecetdColumn]=activePlayer+1;
     console.log(gameData);
     currentRound++;
+    console.log(currentRound);
     
     
     activePlayer=1-activePlayer;
@@ -100,6 +100,11 @@ function selectGamefield(event){
 }
 function endgame(winnerId){
     gameOverElement.style.display='block';
+    for (const gameFieldEle of gameFieldElement){
+        if(!gameFieldEle.classList.contains("disabled")){
+        gameFieldEle.classList.add("disabled");}
+        
+    }
     if(winnerId===1){
         
         winnersName.textContent=player[0].name;
@@ -108,7 +113,7 @@ function endgame(winnerId){
     else if(winnerId===2){
         winnersName.textContent=player[1].name;
     }
-    else {
+    else if(winnerId===-1) {
         document.querySelector("#game_over h2").textContent="DRAW!"
         winnersName.style.display="none";
 
